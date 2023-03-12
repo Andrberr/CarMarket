@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас - Магазин автомобилей</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header>
+    <h1>Магазин автомобилей</h1>
+    <nav>
+        <ul>
+            <li><a href="main_page.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="contacts">
+        <h2>Контакты</h2>
+        <p>Адрес: ул. Ленина, 10</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: info@carshop.com</p>
+        <form action="send.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>
