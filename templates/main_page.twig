@@ -1,0 +1,35 @@
+<main>
+    <section>
+        <div class="car-category">
+            <h2>Ближайшие поступления:</h2>
+        </div>
+        <div class="car-list">
+            {% for car in arrival_cars %}
+                <div class="car">
+                    <img src="{{ car.image }}"
+                         alt="Car 1">
+                    <h2>{{ car.name }}</h2>
+                    <p>Цена: {{ car.price }}</p>
+                    <p>{{ car.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section>
+        <div class="car-category">
+            <h2>Автомобили в наличии:</h2>
+        </div>
+        <div class="car-list">
+            {% for car in cars %}
+                <div class="car">
+                    <img src="{{ car.image }}"
+                         alt="Car 1">
+                    <h2>{{ car.name }}</h2>
+                    <p>Цена: {{ car.price }}</p>
+                    <p>{{ car.description }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+</main>

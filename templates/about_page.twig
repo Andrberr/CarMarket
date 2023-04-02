@@ -1,0 +1,17 @@
+<main>
+<div class="about">
+    {% for part in parts %}
+    <div class="about-section">
+        <div class="about-image">
+            <img src="{{ part.image }}">
+        </div>
+        <div class="about-text">
+            <h2>{{ part.head }}</h2>
+            <p>{{ part.fir_descr }}</p>
+            <p>{{ part.sec_descr }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</main>
+
