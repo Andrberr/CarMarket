@@ -1,0 +1,231 @@
+/* Стили для общих элементов */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #646161;
+    color: #77cbb7;
+}
+
+header {
+    background-color: #333;
+    color: #77cbb7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    color: #77cbb7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #165d7e;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/*about section*/
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-section {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+
+.about-section:last-child {
+    margin-bottom: 0;
+}
+
+.about-image {
+    flex-basis: 40%;
+    margin-right: 20px;
+}
+
+.about-image img {
+    width: 60%;
+    height: auto;
+}
+
+.about-text {
+    flex-basis: 60%;
+}
+
+.about h2 {
+    margin-top: 0;
+    color: #5aa2e0;
+}
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+
+/*car elem*/
+.car {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.car img {
+    max-width: 100%;
+}
+
+.car h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #5aa2e0;
+}
+
+.car p {
+    margin-bottom: 20px;
+}
+
+.car p:last-child {
+    margin-bottom: 0;
+}
+
+.car-category{
+    color: #5aa2e0;
+}
+
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*contact page*/
+
+.contacts {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts h2 {
+    margin-bottom: 20px;
+}
+
+.contacts p {
+    margin-bottom: 10px;
+}
+
+.contacts form {
+    margin-top: 20px;
+}
+
+.contacts label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contacts input, .contacts textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contacts textarea {
+    height: 100px;
+}
+
+.contacts button[type = "submit"] {
+    display: flex;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #77cbb7;
+    padding: 5px;
+}
+
+footer p {
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-section {
+        flex-basis: 100%;
+    }
+
+    .about-image {
+        flex-basis: 40%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        flex-basis: 100%;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+}
+
